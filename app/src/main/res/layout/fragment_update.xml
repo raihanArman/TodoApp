@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddFragment"
+        android:layout_margin="20dp">
+
+        <EditText
+            android:id="@+id/et_title_current"
+            android:layout_width="0dp"
+            android:padding="24dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_margin="5dp"
+            android:hint="Title"
+            android:background="@drawable/custom_input"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/properties"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/properties_current"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="24dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/custom_input"
+            android:entries="@array/prpoerties"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_title_current"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/et_description_current"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:ems="10"
+            android:padding="24dp"
+            android:background="@drawable/custom_input"
+            android:gravity="start|top"
+            android:hint="Description"
+            android:layout_margin="5dp"
+            android:inputType="textMultiLine"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/properties_current" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

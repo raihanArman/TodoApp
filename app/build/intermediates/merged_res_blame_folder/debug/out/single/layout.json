@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_add.xml",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\fragment_add.xml"
+    },
+    {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_list.xml",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\fragment_list.xml"
+    },
+    {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_update.xml",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\fragment_update.xml"
+    },
+    {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

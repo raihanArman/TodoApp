@@ -1,0 +1,30 @@
+id/co/todoapp/BuildConfig.java
+ id.co.todoapp.BuildConfig
+id/co/todoapp/DataBindingTriggerClass.java
+ id.co.todoapp.DataBindingTriggerClass
+id/co/todoapp/DataBinderMapperImpl.java
+ id.co.todoapp.DataBinderMapperImpl
+ id.co.todoapp.DataBinderMapperImpl$InnerBrLookup
+ id.co.todoapp.DataBinderMapperImpl$InnerLayoutIdLookup
+androidx/databinding/DataBinderMapperImpl.java
+ androidx.databinding.DataBinderMapperImpl
+id/co/todoapp/BR.java
+ id.co.todoapp.BR
+id/co/todoapp/databinding/FragmentAddBinding.java
+ id.co.todoapp.databinding.FragmentAddBinding
+id/co/todoapp/databinding/FragmentListBindingImpl.java
+ id.co.todoapp.databinding.FragmentListBindingImpl
+id/co/todoapp/databinding/FragmentUpdateBindingImpl.java
+ id.co.todoapp.databinding.FragmentUpdateBindingImpl
+id/co/todoapp/databinding/FragmentListBinding.java
+ id.co.todoapp.databinding.FragmentListBinding
+id/co/todoapp/databinding/FragmentUpdateBinding.java
+ id.co.todoapp.databinding.FragmentUpdateBinding
+id/co/todoapp/databinding/FragmentAddBindingImpl.java
+ id.co.todoapp.databinding.FragmentAddBindingImpl
+androidx/databinding/library/baseAdapters/BR.java
+ androidx.databinding.library.baseAdapters.BR
+id/co/todoapp/databinding/ActivityMainBinding.java
+ id.co.todoapp.databinding.ActivityMainBinding
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
