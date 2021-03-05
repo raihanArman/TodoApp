@@ -29,6 +29,7 @@ class AddFragment : Fragment() {
         dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_add, container, false)
         // Inflate the layout for this fragment
         setHasOptionsMenu(true)
+        dataBinding.properties.onItemSelectedListener = mSharedViewModel.listener
         return dataBinding.root
     }
 
