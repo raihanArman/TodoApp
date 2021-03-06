@@ -9,6 +9,7 @@ import androidx.databinding.ViewDataBinding;
 import id.co.todoapp.databinding.FragmentAddBindingImpl;
 import id.co.todoapp.databinding.FragmentListBindingImpl;
 import id.co.todoapp.databinding.FragmentUpdateBindingImpl;
+import id.co.todoapp.databinding.RowLayoutBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -26,12 +27,15 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_FRAGMENTUPDATE = 3;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(3);
+  private static final int LAYOUT_ROWLAYOUT = 4;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(id.co.todoapp.R.layout.fragment_add, LAYOUT_FRAGMENTADD);
     INTERNAL_LAYOUT_ID_LOOKUP.put(id.co.todoapp.R.layout.fragment_list, LAYOUT_FRAGMENTLIST);
     INTERNAL_LAYOUT_ID_LOOKUP.put(id.co.todoapp.R.layout.fragment_update, LAYOUT_FRAGMENTUPDATE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(id.co.todoapp.R.layout.row_layout, LAYOUT_ROWLAYOUT);
   }
 
   @Override
@@ -60,6 +64,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new FragmentUpdateBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for fragment_update is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ROWLAYOUT: {
+          if ("layout/row_layout_0".equals(tag)) {
+            return new RowLayoutBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for row_layout is invalid. Received: " + tag);
         }
       }
     }
@@ -114,12 +124,13 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(3);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
 
     static {
       sKeys.put("layout/fragment_add_0", id.co.todoapp.R.layout.fragment_add);
       sKeys.put("layout/fragment_list_0", id.co.todoapp.R.layout.fragment_list);
       sKeys.put("layout/fragment_update_0", id.co.todoapp.R.layout.fragment_update);
+      sKeys.put("layout/row_layout_0", id.co.todoapp.R.layout.row_layout);
     }
   }
 }

@@ -1,1 +1,1 @@
-[{"navFile":"src\\main\\res\\navigation\\my_nav.xml","javaFiles":["id.co.todoapp.ListFragmentDirections","id.co.todoapp.AddFragmentDirections","id.co.todoapp.UpdateFragmentDirections"]}]
+[{"navFile":"src\\main\\res\\navigation\\my_nav.xml","javaFiles":["id.co.todoapp.ListFragmentDirections","id.co.todoapp.fragments.add.AddFragmentDirections","id.co.todoapp.UpdateFragmentDirections"]}]

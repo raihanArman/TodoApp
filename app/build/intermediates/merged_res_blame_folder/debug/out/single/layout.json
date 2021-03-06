@@ -12,6 +12,10 @@
         "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\fragment_update.xml"
     },
     {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_layout.xml",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\row_layout.xml"
+    },
+    {
         "merged": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
         "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     }

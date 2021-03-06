@@ -1070,6 +1070,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color material_blue_grey_800
@@ -1172,6 +1173,7 @@ color purple_200
 color purple_500
 color purple_700
 color radiobutton_themeable_attribute_color
+color red
 color ripple_material_dark
 color ripple_material_light
 color secondary_text_default_material_dark
@@ -1191,6 +1193,7 @@ color test_mtrl_calendar_day_selected
 color tooltip_background_dark
 color tooltip_background_light
 color white
+color yellow
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
 dimen abc_action_bar_default_height_material
@@ -1702,6 +1705,7 @@ drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
+drawable item_background
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -2056,6 +2060,7 @@ id percent
 id pin
 id position
 id postLayout
+id priority_indicator
 id progress_circular
 id progress_horizontal
 id properties
@@ -2070,6 +2075,7 @@ id rightToLeft
 id right_icon
 id right_side
 id rounded
+id row_background
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
@@ -2174,6 +2180,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tv_desc
+id tv_title
 id unchecked
 id uniform
 id unlabeled
@@ -2326,6 +2334,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

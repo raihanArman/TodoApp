@@ -116,6 +116,14 @@
         "source": "F:\\TodoApp\\app\\src\\main\\res\\drawable\\custom_input.xml"
     },
     {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_row_layout.xml.flat",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\row_layout.xml"
+    },
+    {
+        "merged": "F:\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_item_background.xml.flat",
+        "source": "F:\\TodoApp\\app\\src\\main\\res\\drawable\\item_background.xml"
+    },
+    {
         "merged": "F:\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_add.xml.flat",
         "source": "F:\\TodoApp\\app\\src\\main\\res\\layout\\fragment_add.xml"
     },
