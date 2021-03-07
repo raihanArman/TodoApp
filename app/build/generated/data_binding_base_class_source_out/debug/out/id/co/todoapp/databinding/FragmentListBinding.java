@@ -22,7 +22,7 @@ public abstract class FragmentListBinding extends ViewDataBinding {
   public final FloatingActionButton floatingActionButton;
 
   @NonNull
-  public final ImageView imageView;
+  public final ImageView ivNoData;
 
   @NonNull
   public final ConstraintLayout listLayout;
@@ -31,17 +31,17 @@ public abstract class FragmentListBinding extends ViewDataBinding {
   public final RecyclerView recyclerView;
 
   @NonNull
-  public final TextView textView;
+  public final TextView tvNoData;
 
   protected FragmentListBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      FloatingActionButton floatingActionButton, ImageView imageView, ConstraintLayout listLayout,
-      RecyclerView recyclerView, TextView textView) {
+      FloatingActionButton floatingActionButton, ImageView ivNoData, ConstraintLayout listLayout,
+      RecyclerView recyclerView, TextView tvNoData) {
     super(_bindingComponent, _root, _localFieldCount);
     this.floatingActionButton = floatingActionButton;
-    this.imageView = imageView;
+    this.ivNoData = ivNoData;
     this.listLayout = listLayout;
     this.recyclerView = recyclerView;
-    this.textView = textView;
+    this.tvNoData = tvNoData;
   }
 
   @NonNull

@@ -36,6 +36,12 @@ id/co/todoapp/data/ToDoDao_Impl.java
  id.co.todoapp.data.ToDoDao_Impl$1
  id.co.todoapp.data.ToDoDao_Impl$2
  id.co.todoapp.data.ToDoDao_Impl$3
+ id.co.todoapp.data.ToDoDao_Impl$4
+ id.co.todoapp.data.ToDoDao_Impl$5
+ id.co.todoapp.data.ToDoDao_Impl$6
+ id.co.todoapp.data.ToDoDao_Impl$7
+ id.co.todoapp.data.ToDoDao_Impl$8
+ id.co.todoapp.data.ToDoDao_Impl$9
 androidx/databinding/DataBindingComponent.java
  androidx.databinding.DataBindingComponent
 id/co/todoapp/databinding/RowLayoutBindingImpl.java

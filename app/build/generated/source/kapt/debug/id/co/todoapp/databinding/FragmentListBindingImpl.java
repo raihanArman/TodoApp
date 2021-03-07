@@ -16,8 +16,8 @@ public class FragmentListBindingImpl extends FragmentListBinding  {
         sViewsWithIds = new android.util.SparseIntArray();
         sViewsWithIds.put(R.id.recyclerView, 1);
         sViewsWithIds.put(R.id.floatingActionButton, 2);
-        sViewsWithIds.put(R.id.imageView, 3);
-        sViewsWithIds.put(R.id.textView, 4);
+        sViewsWithIds.put(R.id.iv_no_data, 3);
+        sViewsWithIds.put(R.id.tv_no_data, 4);
     }
     // views
     // variables

@@ -16,20 +16,20 @@
         "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
-    },
-    {
         "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_update.xml.flat",
         "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\layout\\fragment_update.xml"
     },
     {
-        "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_list_fragment_menu.xml.flat",
-        "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\menu\\list_fragment_menu.xml"
+        "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
         "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_save_24.xml.flat",
         "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\drawable\\ic_baseline_save_24.xml"
+    },
+    {
+        "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\menu_list_fragment_menu.xml.flat",
+        "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\menu\\list_fragment_menu.xml"
     },
     {
         "merged": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_custom_input.xml.flat",
