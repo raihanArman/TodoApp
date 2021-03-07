@@ -8,6 +8,7 @@ public final class ListFragment extends androidx.fragment.app.Fragment {
     private final kotlin.Lazy viewModel$delegate = null;
     @org.jetbrains.annotations.NotNull()
     public id.co.todoapp.databinding.FragmentListBinding dataBinding;
+    private java.util.HashMap _$_findViewCache;
     
     private final id.co.todoapp.fragments.list.ListAdapter getListAdapter() {
         return null;

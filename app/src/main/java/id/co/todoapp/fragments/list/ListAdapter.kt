@@ -6,7 +6,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import id.co.todoapp.ListFragmentDirections
 import id.co.todoapp.R
 import id.co.todoapp.data.models.Priority
 import id.co.todoapp.data.models.TodoData
@@ -29,6 +31,10 @@ class ListAdapter(val context: Context) : RecyclerView.Adapter<ListAdapter.MyVie
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         holder.binding.tvTitle.text = dataList[position].title
         holder.binding.tvDesc.text = dataList[position].description
+        holder.itemView.setOnClickListener {
+            val action = ListFragmentDirections.actionListFragmentToUpdateFragment(dataList[position])
+            holder.itemView.findNavController().navigate(action)
+        }
 
         val priority = dataList[position].priority
         when(priority){

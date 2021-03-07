@@ -6,6 +6,7 @@ import java.lang.System;
 public final class UpdateFragment extends androidx.fragment.app.Fragment {
     @org.jetbrains.annotations.NotNull()
     public id.co.todoapp.databinding.FragmentUpdateBinding dataBindning;
+    private java.util.HashMap _$_findViewCache;
     
     @org.jetbrains.annotations.NotNull()
     public final id.co.todoapp.databinding.FragmentUpdateBinding getDataBindning() {
