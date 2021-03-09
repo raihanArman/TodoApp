@@ -21,14 +21,15 @@ class ListFragment : Fragment() {
     private val listAdapter: ListAdapter by lazy { ListAdapter(requireContext()) }
     private val viewModel : ToDoViewModel by viewModels()
     private val mSharedViewModel: SharedViewModel by viewModels()
-    lateinit var dataBinding : FragmentListBinding
+    private var _dataBinding : FragmentListBinding ?= null
+    private val dataBinding get() = _dataBinding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container,  false)
+        _dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container,  false)
         dataBinding.lifecycleOwner = this
         dataBinding.mSharedViewModel = mSharedViewModel
 
@@ -84,4 +85,8 @@ class ListFragment : Fragment() {
         builder.create().show()
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _dataBinding = null
+    }
 }

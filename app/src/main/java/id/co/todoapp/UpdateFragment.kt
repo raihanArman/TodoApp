@@ -17,7 +17,8 @@ import id.co.todoapp.fragments.SharedViewModel
 
 class UpdateFragment : Fragment() {
 
-    lateinit var dataBindning: FragmentUpdateBinding
+    private var _dataBindning: FragmentUpdateBinding ?= null
+    private val dataBindning get() = _dataBindning!!
     private val args by navArgs<UpdateFragmentArgs>()
     private val mShareViewModel: SharedViewModel by viewModels()
     private val mTodoViewModel: ToDoViewModel by viewModels()
@@ -26,7 +27,7 @@ class UpdateFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        dataBindning = DataBindingUtil.inflate(inflater, R.layout.fragment_update, container, false)
+        _dataBindning = DataBindingUtil.inflate(inflater, R.layout.fragment_update, container, false)
         // Inflate the layout for this fragment
         setHasOptionsMenu(true)
         return dataBindning.root
@@ -35,9 +36,8 @@ class UpdateFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        dataBindning.etTitleCurrent.setText(args.currentItem.title)
-        dataBindning.etDescriptionCurrent.setText(args.currentItem.description)
-        dataBindning.propertiesCurrent.setSelection(mShareViewModel.parsePriorityToInt(args.currentItem.priority))
+        dataBindning.args = args
+
         dataBindning.propertiesCurrent.onItemSelectedListener = mShareViewModel.listener
 
     }
@@ -91,5 +91,10 @@ class UpdateFragment : Fragment() {
             Toast.makeText(requireContext(), "Please fill out all field", Toast.LENGTH_LONG).show()
         }
 
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _dataBindning = null
     }
 }

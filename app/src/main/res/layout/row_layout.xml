@@ -4,6 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="toDoData"
+            type="id.co.todoapp.data.models.TodoData" />
+    </data>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -14,6 +20,7 @@
             android:background="@drawable/item_background"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:sendDataToUpdateFragment="@{toDoData}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +32,7 @@
                 android:layout_height="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
+                android:parsePriorityColor="@{toDoData.priority}"
                 app:cardBackgroundColor="@color/red"
                 app:cardCornerRadius="100dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +44,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
-                android:text="My Title"
+                android:text="@{toDoData.title}"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
@@ -51,7 +59,7 @@
                 android:layout_marginBottom="16dp"
                 android:maxLength="300"
                 android:maxLines="10"
-                android:text="TextView"
+                android:text="@{toDoData.description}"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
