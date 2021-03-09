@@ -29,6 +29,8 @@ class ListFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         dataBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_list, container,  false)
+        dataBinding.lifecycleOwner = this
+        dataBinding.mSharedViewModel = mSharedViewModel
 
         return dataBinding.root
     }
@@ -46,13 +48,6 @@ class ListFragment : Fragment() {
             listAdapter.setData(data)
         })
 
-        mSharedViewModel.emptyDatabase.observe(viewLifecycleOwner, Observer {
-            showEmptyDatabaseView(it)
-        })
-
-        dataBinding.floatingActionButton.setOnClickListener {
-            findNavController().navigate(R.id.action_listFragment_to_addFragment)
-        }
 
         dataBinding.listLayout.setOnClickListener {
             findNavController().navigate(R.id.action_listFragment_to_updateFragment)
@@ -62,15 +57,6 @@ class ListFragment : Fragment() {
 
     }
 
-    private fun showEmptyDatabaseView(emptyDatabase: Boolean) {
-        if(emptyDatabase){
-            dataBinding.ivNoData.visibility = View.VISIBLE
-            dataBinding.tvNoData.visibility = View.VISIBLE
-        }else{
-            dataBinding.ivNoData.visibility = View.GONE
-            dataBinding.tvNoData.visibility = View.GONE
-        }
-    }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.list_fragment_menu, menu)
@@ -97,4 +83,5 @@ class ListFragment : Fragment() {
         builder.setMessage("Are you sure you want to remove everything ?")
         builder.create().show()
     }
+
 }
