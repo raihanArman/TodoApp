@@ -10,10 +10,10 @@ import androidx.databinding.BindingAdapter
 import androidx.lifecycle.MutableLiveData
 import androidx.navigation.findNavController
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import id.co.todoapp.ListFragmentDirections
 import id.co.todoapp.R
 import id.co.todoapp.data.models.Priority
 import id.co.todoapp.data.models.TodoData
+import id.co.todoapp.fragments.list.ListFragmentDirections
 
 class BindingAdapters {
 
@@ -37,9 +37,9 @@ class BindingAdapters {
             }
         }
 
-        @BindingAdapter("parsePriorityToInt")
+        @BindingAdapter("android:parsePriorityToInt")
         @JvmStatic
-        fun parsePriorityToInt(view: Spinner, priority: Priority){
+        fun parsePriority(view: Spinner, priority: Priority){
             when(priority){
                 Priority.HIGH -> view.setSelection(0)
                 Priority.MEDIUM -> view.setSelection(1)
@@ -58,7 +58,7 @@ class BindingAdapters {
             }
         }
 
-        @BindingAdapter("sendDataToUpdateFragment")
+        @BindingAdapter("android:sendDataToUpdateFragment")
         @JvmStatic
         fun sendDataToUpdateFragment(view: ConstraintLayout, currentItem: TodoData){
             view.setOnClickListener {

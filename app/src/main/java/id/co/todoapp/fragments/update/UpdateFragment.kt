@@ -1,4 +1,4 @@
-package id.co.todoapp
+package id.co.todoapp.fragments.update
 
 import android.app.AlertDialog
 import android.os.Bundle
@@ -9,7 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import id.co.todoapp.data.models.Priority
+import id.co.todoapp.R
 import id.co.todoapp.data.models.TodoData
 import id.co.todoapp.data.viewmodel.ToDoViewModel
 import id.co.todoapp.databinding.FragmentUpdateBinding

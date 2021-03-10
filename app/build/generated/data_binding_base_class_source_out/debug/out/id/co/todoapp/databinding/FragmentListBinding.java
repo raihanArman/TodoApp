@@ -9,11 +9,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import id.co.todoapp.R;
+import id.co.todoapp.fragments.SharedViewModel;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -33,6 +35,9 @@ public abstract class FragmentListBinding extends ViewDataBinding {
   @NonNull
   public final TextView tvNoData;
 
+  @Bindable
+  protected SharedViewModel mMSharedViewModel;
+
   protected FragmentListBinding(Object _bindingComponent, View _root, int _localFieldCount,
       FloatingActionButton floatingActionButton, ImageView ivNoData, ConstraintLayout listLayout,
       RecyclerView recyclerView, TextView tvNoData) {
@@ -42,6 +47,13 @@ public abstract class FragmentListBinding extends ViewDataBinding {
     this.listLayout = listLayout;
     this.recyclerView = recyclerView;
     this.tvNoData = tvNoData;
+  }
+
+  public abstract void setMSharedViewModel(@Nullable SharedViewModel mSharedViewModel);
+
+  @Nullable
+  public SharedViewModel getMSharedViewModel() {
+    return mMSharedViewModel;
   }
 
   @NonNull

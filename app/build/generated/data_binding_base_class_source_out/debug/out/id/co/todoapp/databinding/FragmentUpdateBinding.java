@@ -8,9 +8,11 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.Bindable;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import id.co.todoapp.R;
+import id.co.todoapp.fragments.update.UpdateFragmentArgs;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -24,12 +26,22 @@ public abstract class FragmentUpdateBinding extends ViewDataBinding {
   @NonNull
   public final Spinner propertiesCurrent;
 
+  @Bindable
+  protected UpdateFragmentArgs mArgs;
+
   protected FragmentUpdateBinding(Object _bindingComponent, View _root, int _localFieldCount,
       EditText etDescriptionCurrent, EditText etTitleCurrent, Spinner propertiesCurrent) {
     super(_bindingComponent, _root, _localFieldCount);
     this.etDescriptionCurrent = etDescriptionCurrent;
     this.etTitleCurrent = etTitleCurrent;
     this.propertiesCurrent = propertiesCurrent;
+  }
+
+  public abstract void setArgs(@Nullable UpdateFragmentArgs args);
+
+  @Nullable
+  public UpdateFragmentArgs getArgs() {
+    return mArgs;
   }
 
   @NonNull

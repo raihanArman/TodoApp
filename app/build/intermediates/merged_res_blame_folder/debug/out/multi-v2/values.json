@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Raihan\\.gradle\\caches\\transforms-2\\files-2.1\\987a3cc56a42acc334d24e8facd30194\\appcompat-1.2.0\\res\\values\\values.xml",
@@ -111,25 +111,6 @@
                         "endLines": "5043,5050,5061,7499,7504",
                         "endColumns": "24,24,24,24,24",
                         "endOffsets": "331953,332338,332935,481554,481824"
-                    }
-                },
-                {
-                    "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "5,1,3",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "199,17,122",
-                        "endLines": "9,1,3",
-                        "endColumns": "19,44,69",
-                        "endOffsets": "361,57,187"
-                    },
-                    "to": {
-                        "startLines": "2,1067,1080",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "150,62251,63708",
-                        "endLines": "6,1067,1080",
-                        "endColumns": "19,44,69",
-                        "endOffsets": "308,62291,63773"
                     }
                 },
                 {
@@ -264,6 +245,25 @@
                     }
                 },
                 {
+                    "source": "F:\\TodoApp\\app\\src\\main\\res\\values\\themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "102",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "830"
+                    },
+                    "to": {
+                        "startLines": "3785",
+                        "startColumns": "4",
+                        "startOffsets": "250943",
+                        "endLines": "3797",
+                        "endColumns": "12",
+                        "endOffsets": "251657"
+                    }
+                },
+                {
                     "source": "C:\\Users\\Raihan\\.gradle\\caches\\transforms-2\\files-2.1\\9b2bf069d5fd1b5f0eabbe5bfee794cf\\drawerlayout-1.1.1\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5",
@@ -283,22 +283,20 @@
                     }
                 },
                 {
-                    "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\values\\themes.xml",
+                    "source": "F:\\TodoApp\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "102",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "830"
+                        "startLines": "7,11,2,3,4,9,5,6,8,10",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "293,460,57,105,153,379,201,247,336,418",
+                        "endColumns": "41,39,46,46,46,37,44,44,41,40",
+                        "endOffsets": "330,495,99,147,195,412,241,287,373,454"
                     },
                     "to": {
-                        "startLines": "3785",
-                        "startColumns": "4",
-                        "startOffsets": "250943",
-                        "endLines": "3797",
-                        "endColumns": "12",
-                        "endOffsets": "251657"
+                        "startLines": "410,466,500,501,502,503,514,515,518,519",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "19808,23709,25930,25977,26024,26071,26806,26851,27017,27059",
+                        "endColumns": "41,39,46,46,46,37,44,44,41,40",
+                        "endOffsets": "19845,23744,25972,26019,26066,26104,26846,26891,27054,27095"
                     }
                 },
                 {
@@ -318,6 +316,25 @@
                         "endLines": "8116",
                         "endColumns": "24",
                         "endOffsets": "517118"
+                    }
+                },
+                {
+                    "source": "F:\\TodoApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "5,1,3",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "199,17,122",
+                        "endLines": "9,1,3",
+                        "endColumns": "19,44,69",
+                        "endOffsets": "361,57,187"
+                    },
+                    "to": {
+                        "startLines": "2,1067,1080",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "150,62251,63708",
+                        "endLines": "6,1067,1080",
+                        "endColumns": "19,44,69",
+                        "endOffsets": "308,62291,63773"
                     }
                 },
                 {
@@ -371,23 +388,6 @@
                         "endLines": "320,662,663,664,672,673,674,961,7272",
                         "endColumns": "55,58,47,55,74,75,71,65,24",
                         "endOffsets": "15164,36596,36644,36700,37386,37462,37534,56117,469654"
-                    }
-                },
-                {
-                    "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\values\\colors.xml",
-                    "from": {
-                        "startLines": "7,11,2,3,4,9,5,6,8,10",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "293,460,57,105,153,379,201,247,336,418",
-                        "endColumns": "41,39,46,46,46,37,44,44,41,40",
-                        "endOffsets": "330,495,99,147,195,412,241,287,373,454"
-                    },
-                    "to": {
-                        "startLines": "410,466,500,501,502,503,514,515,518,519",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "19808,23709,25930,25977,26024,26071,26806,26851,27017,27059",
-                        "endColumns": "41,39,46,46,46,37,44,44,41,40",
-                        "endOffsets": "19845,23744,25972,26019,26066,26104,26846,26891,27054,27095"
                     }
                 },
                 {

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "G:\\Kotlin\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
+            "outputFile": "F:\\TodoApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-night-v8\\values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Raihan\\.gradle\\caches\\transforms-2\\files-2.1\\987a3cc56a42acc334d24e8facd30194\\appcompat-1.2.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "G:\\Kotlin\\TodoApp\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "F:\\TodoApp\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

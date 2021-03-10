@@ -22,18 +22,22 @@ id/co/todoapp/databinding/FragmentListBinding.java
  id.co.todoapp.databinding.FragmentListBinding
 id/co/todoapp/databinding/FragmentUpdateBinding.java
  id.co.todoapp.databinding.FragmentUpdateBinding
-id/co/todoapp/data/ToDoDatabase_Impl.java
- id.co.todoapp.data.ToDoDatabase_Impl
- id.co.todoapp.data.ToDoDatabase_Impl$1
+androidx/databinding/DataBindingComponent.java
+ androidx.databinding.DataBindingComponent
 id/co/todoapp/databinding/FragmentAddBindingImpl.java
  id.co.todoapp.databinding.FragmentAddBindingImpl
 androidx/databinding/library/baseAdapters/BR.java
  androidx.databinding.library.baseAdapters.BR
 id/co/todoapp/databinding/ActivityMainBinding.java
  id.co.todoapp.databinding.ActivityMainBinding
+id/co/todoapp/databinding/RowLayoutBindingImpl.java
+ id.co.todoapp.databinding.RowLayoutBindingImpl
 id/co/todoapp/data/ToDoDao_Impl.java
  id.co.todoapp.data.ToDoDao_Impl
  id.co.todoapp.data.ToDoDao_Impl$1
+ id.co.todoapp.data.ToDoDao_Impl$10
+ id.co.todoapp.data.ToDoDao_Impl$11
+ id.co.todoapp.data.ToDoDao_Impl$12
  id.co.todoapp.data.ToDoDao_Impl$2
  id.co.todoapp.data.ToDoDao_Impl$3
  id.co.todoapp.data.ToDoDao_Impl$4
@@ -42,7 +46,6 @@ id/co/todoapp/data/ToDoDao_Impl.java
  id.co.todoapp.data.ToDoDao_Impl$7
  id.co.todoapp.data.ToDoDao_Impl$8
  id.co.todoapp.data.ToDoDao_Impl$9
-androidx/databinding/DataBindingComponent.java
- androidx.databinding.DataBindingComponent
-id/co/todoapp/databinding/RowLayoutBindingImpl.java
- id.co.todoapp.databinding.RowLayoutBindingImpl
+id/co/todoapp/data/ToDoDatabase_Impl.java
+ id.co.todoapp.data.ToDoDatabase_Impl
+ id.co.todoapp.data.ToDoDatabase_Impl$1

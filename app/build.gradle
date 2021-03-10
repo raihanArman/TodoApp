@@ -84,4 +84,8 @@ dependencies {
     // DataBinding
     kapt "com.android.databinding:compiler:3.2.0-alpha10"
     kapt "androidx.databinding:databinding-common:4.1.1"
+
+
+//    Recycler View Animators
+    implementation 'jp.wasabeef:recyclerview-animators:4.0.2'
 }

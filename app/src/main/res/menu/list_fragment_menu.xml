@@ -14,7 +14,7 @@
                 <item android:id="@+id/menu_priority_high"
                     android:title="Priority High"/>
                 <item android:id="@+id/menu_priority_low"
-                    android:title="Priority High"/>
+                    android:title="Priority Low"/>
             </menu>
         </item>
     </group>
