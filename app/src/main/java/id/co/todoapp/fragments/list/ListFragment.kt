@@ -106,7 +106,7 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
                 val itemToDelete = listAdapter.dataList[viewHolder.adapterPosition]
                 viewModel.deleteItem(itemToDelete)
                 listAdapter.notifyItemRemoved(viewHolder.adapterPosition)
-                restoreDeleteData(viewHolder.itemView, itemToDelete, viewHolder.adapterPosition)
+                restoreDeleteData(viewHolder.itemView, itemToDelete)
             }
         }
 
@@ -115,14 +115,13 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
 
     }
 
-    private fun restoreDeleteData(itemView: View, itemToDelete: TodoData, adapterPosition: Int) {
+    private fun restoreDeleteData(itemView: View, itemToDelete: TodoData) {
         val snackbar=  Snackbar.make(
                 itemView, "Delete ${itemToDelete.title}",
                 Snackbar.LENGTH_LONG
         )
         snackbar.setAction("Undo"){
             viewModel.insertData(itemToDelete)
-            listAdapter.notifyItemChanged(adapterPosition)
         }
         snackbar.show()
     }
