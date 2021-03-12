@@ -21,6 +21,8 @@ import id.co.todoapp.data.viewmodel.ToDoViewModel
 import id.co.todoapp.databinding.FragmentListBinding
 import id.co.todoapp.fragments.SharedViewModel
 import id.co.todoapp.fragments.list.adapter.ListAdapter
+import id.co.todoapp.util.hideKeyboard
+import id.co.todoapp.util.observeOnce
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator
 
 
@@ -68,6 +70,8 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
 
         setHasOptionsMenu(true)
 
+        hideKeyboard(requireActivity())
+
     }
 
 
@@ -86,12 +90,12 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
                 confirmRemoveAll()
             }
             R.id.menu_priority_high ->{
-                viewModel.sortByHighPriority.observe(this, Observer {
+                viewModel.sortByHighPriority.observe(viewLifecycleOwner, Observer {
                     listAdapter.setData(it)
                 })
             }
             R.id.menu_priority_low ->{
-                viewModel.sortByLowPriority.observe(this, Observer {
+                viewModel.sortByLowPriority.observe(viewLifecycleOwner, Observer {
                     listAdapter.setData(it)
                 })
             }
@@ -156,7 +160,7 @@ class ListFragment : Fragment(), SearchView.OnQueryTextListener {
     private fun searchThroughDatabase(query: String) {
         var searchQuery = "%$query%"
 
-        viewModel.searchDatabase(searchQuery).observe(this, Observer { list ->
+        viewModel.searchDatabase(searchQuery).observeOnce(viewLifecycleOwner, Observer { list ->
             list?.let {
                 listAdapter.setData(it)
             }
